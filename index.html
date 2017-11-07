@@ -1,0 +1,54 @@
+<HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="voice-recog.js"></script>
+	<script>
+		if (annyang) {
+		  // Let's define our first command. First the text we expect, and then the function it should call
+		  var commands = {
+		    'chicken': function() {
+		    	alert("hi!");
+		      $('#img1').hide();
+		    }
+		  };
+
+		  // Add our commands to annyang
+		  annyang.addCommands(commands);
+
+		  // Start listening. You can call this here, or attach this call to an event, button, etc.
+		  annyang.start();
+		}
+</script>
+</head>
+
+<body>
+	
+<div class="top-navigation-bar">
+	<img src="assets/exit.svg">
+</div>
+
+<div class="scene-container">
+	<img id="img1" src="assets/chicken.svg">
+	<img src="assets/tractor.svg">
+	<img src="assets/girl.svg">
+</div>
+
+<div class="buttons-container">
+	<button class="option" id="option-1">
+		<img src="assets/microphone.svg">
+		<span>tractor</span>
+	</button>
+	
+	<button class="option" id="option-2">
+		<img src="assets/microphone.svg">
+		<span>niña</span>
+	</button>
+
+	<button class="option" id="option-3">
+		<img src="assets/microphone.svg">
+		<span>pollo</span>
+	</button>
+</div>
+
+</body>
+</HTML>

@@ -1,0 +1,30 @@
+button {
+	background-color: #00C8FF;
+	color: white;
+	font-size: 30px;
+	border-radius: 20px;
+	border: none;
+	height: 60px;
+	width: 180px;
+	font-family: "DIN";
+	box-shadow: 0px 10px #01ACDB;
+	margin-right: 15px;
+}
+
+button img {
+	height: 30px;
+}
+
+@font-face {
+	font-family: "DIN";
+	src: url('assets/fonts/Linotype-DIN.otf');
+}
+
+.buttons-container {
+	text-align: center;
+}
+
+.scene-container {
+	text-align: center;
+	margin-bottom: 50px;
+}
