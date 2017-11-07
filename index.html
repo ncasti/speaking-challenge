@@ -2,23 +2,6 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="voice-recog.js"></script>
-	<script>
-		if (annyang) {
-		  // Let's define our first command. First the text we expect, and then the function it should call
-		  var commands = {
-		    'chicken': function() {
-		    	alert("hi!");
-		      $('#img1').hide();
-		    }
-		  };
-
-		  // Add our commands to annyang
-		  annyang.addCommands(commands);
-
-		  // Start listening. You can call this here, or attach this call to an event, button, etc.
-		  annyang.start();
-		}
-</script>
 </head>
 
 <body>
@@ -48,6 +31,24 @@
 		<img src="assets/microphone.svg">
 		<span>pollo</span>
 	</button>
+
+		<script>
+		if (annyang) {
+		  // Let's define our first command. First the text we expect, and then the function it should call
+		  var commands = {
+		    'chicken': function() {
+		    	alert("hi!");
+		      $('#img1').hide();
+		    }
+		  };
+
+		  // Add our commands to annyang
+		  annyang.addCommands(commands);
+
+		  // Start listening. You can call this here, or attach this call to an event, button, etc.
+		  annyang.start();
+		}
+</script>
 </div>
 
 </body>
